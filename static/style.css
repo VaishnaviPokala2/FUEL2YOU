@@ -1,0 +1,59 @@
+/* Background */
+body {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0077b6;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0077b6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #023e8a;
+}
+
+.btn-danger {
+    border-radius: 10px;
+}
+
+.btn-warning {
+    border-radius: 10px;
+}
+
+/* Inputs */
+input, select, textarea {
+    border-radius: 10px !important;
+}
+
+/* Heading */
+h2 {
+    font-weight: bold;
+    color: #023e8a;
+}
+
+/* Receipt Box */
+.receipt-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
