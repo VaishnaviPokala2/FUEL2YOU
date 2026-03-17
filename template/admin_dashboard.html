@@ -1,0 +1,33 @@
+<h2>Admin Dashboard</h2>
+
+<h3>Update Fuel Price</h3>
+
+<form action="/update_price" method="POST">
+
+Fuel
+<select name="fuel">
+<option>Petrol</option>
+<option>Diesel</option>
+</select>
+
+New Price
+<input type="number" name="price">
+
+<button>Update</button>
+
+</form>
+
+<h3>All Orders</h3>
+
+{% for o in orders %}
+
+Order ID {{o[0]}} |
+User {{o[1]}} |
+Fuel {{o[2]}} |
+Qty {{o[3]}} |
+Total ₹{{o[4]}} |
+Status {{o[7]}}
+
+<br>
+
+{% endfor %}

@@ -1,0 +1,33 @@
+<h2>Order Fuel</h2>
+
+<form action="/order" method="POST">
+
+Fuel Type
+<select name="fuel">
+<option>Petrol</option>
+<option>Diesel</option>
+</select>
+
+Quantity
+<input type="number" name="qty">
+
+Address
+<input type="text" name="address">
+
+Payment
+<select name="payment">
+<option>UPI</option>
+<option>Credit Card</option>
+<option>Cash on Delivery</option>
+</select>
+
+<button>Place Order</button>
+
+</form>
+
+<h3>Today's Fuel Price</h3>
+
+{% for p in price %}
+{{p[1]}} : ₹{{p[2]}} per litre
+<br>
+{% endfor %}

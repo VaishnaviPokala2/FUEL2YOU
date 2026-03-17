@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fuel2You Register</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+.container{
+background:white;
+width:350px;
+margin:auto;
+padding:20px;
+margin-top:100px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px;
+background:#28a745;
+color:white;
+border:none;
+width:95%;
+cursor:pointer;
+}
+
+a{
+text-decoration:none;
+color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Fuel2You User Registration</h2>
+
+<form action="/register" method="POST">
+
+<input type="text" name="name" placeholder="Enter Name" required>
+
+<input type="email" name="email" placeholder="Enter Email" required>
+
+<input type="password" name="password" placeholder="Enter Password" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<br>
+
+Already have account?
+
+<br><br>
+
+<a href="/">Login Here</a>
+
+</div>
+
+</body>
+</html>

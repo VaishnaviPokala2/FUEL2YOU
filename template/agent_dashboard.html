@@ -1,0 +1,17 @@
+<h2>Delivery Agent Dashboard</h2>
+
+{% for o in orders %}
+
+Order ID : {{o[0]}} <br>
+User : {{o[1]}} <br>
+Fuel : {{o[2]}} <br>
+Qty : {{o[3]}} <br>
+Address : {{o[5]}} <br>
+Status : {{o[7]}} <br>
+
+<a href="/accept/{{o[0]}}">Accept</a>
+<a href="/deliver/{{o[0]}}">Delivered</a>
+
+<hr>
+
+{% endfor %}

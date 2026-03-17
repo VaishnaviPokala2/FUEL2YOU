@@ -1,0 +1,30 @@
+CREATE TABLE users(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+email TEXT,
+password TEXT,
+role TEXT
+);
+
+CREATE TABLE fuel_price(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+fuel TEXT,
+price REAL
+);
+
+CREATE TABLE orders(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+user TEXT,
+fuel TEXT,
+quantity REAL,
+total REAL,
+address TEXT,
+payment TEXT,
+status TEXT
+);
+
+INSERT INTO fuel_price VALUES(1,'Petrol',105);
+INSERT INTO fuel_price VALUES(2,'Diesel',95);
+
+INSERT INTO users VALUES(1,'Admin','admin@gmail.com','admin123','admin');
+INSERT INTO users VALUES(2,'Agent','agent@gmail.com','agent123','agent');
